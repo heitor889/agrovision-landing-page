@@ -1,0 +1,105 @@
+/* pagina.css - Estilos para a página de usuários */
+
+/* Animação suave de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container principal */
+.user-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive design para tablets e celulares */
+@media (max-width: 768px) {
+    .user-card {
+        padding: 20px;
+        margin: 15px;
+        max-width: 100% !important;
+    }
+    
+    .user-header h2 {
+        font-size: 1.5em;
+    }
+    
+    .btn-group-custom {
+        flex-direction: column;
+    }
+    
+    .btn-group-custom .btn {
+        width: 100%;
+    }
+}
+
+/* Estilo para código inline */
+code {
+    background-color: #f8f9fa;
+    color: #d63384;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Melhorias nas linhas de informação */
+.info-row {
+    transition: background-color 0.3s ease;
+}
+
+.info-row:hover {
+    background-color: #f0f0f0;
+}
+
+/* Ícones de informação */
+.info-row i {
+    color: #ffc800;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Botões customizados */
+.btn-group-custom .btn {
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-group-custom .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Estado quando não há usuário */
+.no-user i {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.no-user h3 {
+    color: #333;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Espaçamento adicional */
+.user-info {
+    border-left: 4px solid #ffc800;
+}
+
+/* Footer responsivo */
+@media (max-width: 576px) {
+    .footer .row {
+        flex-direction: column;
+    }
+    
+    .footer .col-lg-4 {
+        text-align: center !important;
+        margin-bottom: 15px;
+    }
+}

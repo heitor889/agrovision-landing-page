@@ -1,0 +1,1542 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.layout_padding {
+  padding: 90px 0;
+}
+
+.layout_padding2 {
+  padding: 75px 0;
+}
+
+.layout_padding2-top {
+  padding-top: 75px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 75px;
+}
+
+.layout_padding-top {
+  padding-top: 90px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 90px;
+}
+
+h1,
+h2 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.heading_container h2 {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.heading_container h2 span {
+  color: #28a745;
+}
+
+.heading_container p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.heading_container.heading_center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*header section*/
+.hero_area {
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.4)), url(../images/hero-bg.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.bg-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.sub_page .hero_area {
+  min-height: auto;
+}
+
+.sub_page .hero_area .bg-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sub_page .hero_area .bg-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: right top;
+  object-position: right top;
+}
+
+.header_section {
+  padding: 15px 0;
+}
+
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+}
+
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.custom_nav-container {
+  padding: 0;
+}
+
+.custom_nav-container .navbar-nav {
+  padding-left: 18%;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 5px 20px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #28a745;
+}
+
+.custom_nav-container .nav_search-btn {
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: none;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.custom_nav-container .nav_search-btn:hover {
+  color: #28a745;
+}
+
+.user_option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.user_option a {
+  margin: 0 10px;
+}
+
+.user_option .user_link {
+  color: #ffffff;
+}
+
+.user_option .user_link:hover {
+  color: #28a745;
+}
+
+.user_option .cart_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.user_option .cart_link svg {
+  width: 17px;
+  height: auto;
+  fill: #ffffff;
+  margin-bottom: 2px;
+}
+
+.user_option .cart_link:hover svg {
+  fill: #28a745;
+}
+
+.user_option .order_online {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+
+.user_option .order_online:hover {
+  background-color: #e69c00;
+}
+
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 7px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span::before,
+.custom_nav-container .navbar-toggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  top: -10px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span::after {
+  top: 10px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before,
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+/*end header section*/
+/* slider section */
+.slider_section {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  padding: 45px 0 75px 0;
+}
+
+.slider_section .row {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slider_section #customCarousel1 {
+  width: 100%;
+  position: unset;
+}
+
+.slider_section .detail-box {
+  color: #ffffff;
+  margin-bottom: 145px;
+}
+
+.slider_section .detail-box h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.slider_section .detail-box p {
+  font-size: 14px;
+}
+
+.slider_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 10px;
+}
+
+.slider_section .detail-box a:hover {
+  background-color: #e69c00;
+}
+
+.slider_section .img-box img {
+  width: 100%;
+}
+
+.slider_section .carousel-indicators {
+  position: unset;
+  margin: 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slider_section .carousel-indicators li {
+  background-color: #ffffff;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.slider_section .carousel-indicators li.active {
+  width: 20px;
+  height: 20px;
+  background-color: #28a745;
+}
+
+.offer_section {
+  position: relative;
+  padding-top: 45px;
+}
+
+.offer_section .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 45px;
+  border-radius: 5px;
+  padding: 20px 15px;
+  background-color: #222831;
+  color: #ffffff;
+}
+
+.offer_section .box .img-box {
+  width: 175px;
+  min-width: 175px;
+  height: 175px;
+  margin-right: 15px;
+  position: relative;
+  -webkit-transition: all 0.1 0.5s;
+  transition: all 0.1 0.5s;
+  border-radius: 100%;
+  border: 5px solid #28a745;
+  overflow: hidden;
+}
+
+.offer_section .box .img-box img {
+  width: 100%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.offer_section .box .detail-box h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  margin: 0;
+}
+
+.offer_section .box .detail-box h6 {
+  font-family: 'Dancing Script', cursive;
+  margin: 10px 0;
+}
+
+.offer_section .box .detail-box h6 span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.offer_section .box .detail-box a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+
+.offer_section .box .detail-box a:hover {
+  background-color: #e69c00;
+}
+
+.offer_section .box .detail-box a svg {
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+  fill: #ffffff;
+}
+
+.offer_section .box:hover .img-box img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.food_section .filters_menu {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 45px 0 20px 0;
+}
+
+.food_section .filters_menu li {
+  padding: 7px 25px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.food_section .filters_menu li.active {
+  background-color: #222831;
+  color: #ffffff;
+}
+
+.food_section .box {
+  background-color: #222831;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 35px 25px;
+  /* Aumenta o espaço interno (topo/baixo e lados) */
+  min-height: 480px;
+  /* Força todas as caixas a terem uma altura maior e idêntica */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Alinha o botão sempre no rodapé da caixa */
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.food_section .box:hover {
+  transform: translateY(-10px);
+  /* A caixa "flutua" de leve para cima */
+  border-color: #28a745;
+  /* Cor amarela do seu template na borda */
+}
+
+.food_section .box .img-box {
+  background: #f1f2f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 215px;
+  border-radius: 0 0 0 45px;
+  margin: -1px;
+  padding: 25px;
+}
+
+.food_section .box .img-box img {
+  max-width: 100%;
+  max-height: 145px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.food_section .box .detail-box {
+  padding: 25px;
+}
+
+.food_section .box .detail-box h5 {
+  font-weight: 600;
+}
+
+.food_section .box .detail-box p {
+  font-size: 15px;
+}
+
+.food_section .box .detail-box h6 {
+  margin-top: 10px;
+}
+
+.food_section .box .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.food_section .box .options a {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #28a745;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.food_section .box .options a svg {
+  width: 18px;
+  height: auto;
+  fill: #ffffff;
+}
+
+.food_section .box:hover .img-box img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.food_section .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.food_section .btn-box a {
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+
+.food_section .btn-box a:hover {
+  background-color: #e69c00;
+}
+
+.about_section {
+  background: #222831;
+  color: #ffffff;
+}
+
+.about_section .row {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about_section .img-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about_section .img-box img {
+  width: 100%;
+  max-width: 445px;
+  position: relative;
+  z-index: 2;
+}
+
+.about_section .detail-box p {
+  margin-top: 15px;
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 15px;
+}
+
+.about_section .detail-box a:hover {
+  background-color: #e69c00;
+}
+
+.book_section {
+  position: relative;
+}
+
+.book_section .heading_container {
+  margin-bottom: 25px;
+}
+
+.book_section .form_container .form-control {
+  width: 100%;
+  border: none;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  border: 1px solid #999;
+  outline: none;
+  color: #000000;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.book_section .form_container .form-control::-webkit-input-placeholder {
+  color: #222222;
+}
+
+.book_section .form_container .form-control:-ms-input-placeholder {
+  color: #222222;
+}
+
+.book_section .form_container .form-control::-ms-input-placeholder {
+  color: #222222;
+}
+
+.book_section .form_container .form-control::placeholder {
+  color: #222222;
+}
+
+.book_section .form_container .nice-select .current {
+  font-size: 16px;
+}
+
+.book_section .form_container button {
+  margin-top: 15px;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+
+.book_section .form_container button:hover {
+  background-color: #e69c00;
+}
+
+.book_section .map_container {
+  width: 100%;
+  height: 345px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.book_section .map_container #googleMap {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* client section start */
+.client_section .heading_container {
+  margin-bottom: 30px;
+}
+
+.client_section .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.client_section .box .img-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 115px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.client_section .box .img-box img {
+  border-radius: 100%;
+  border: 5px solid #28a745;
+  position: relative;
+}
+
+.client_section .box .img-box::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #28a745;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+  transform: rotate(45deg) translateX(-50%);
+}
+
+.client_section .box .detail-box {
+  background-color: #222831;
+  color: #ffffff;
+  padding: 25px 25px 15px 25px;
+  border-radius: 5px;
+}
+
+.client_section .box .detail-box h6 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 15px 0 5px 0;
+}
+
+.client_section .box .detail-box p {
+  margin-bottom: 0;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.client_section .owl-carousel .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 45px;
+  padding: 0 15px;
+}
+
+.client_section .owl-carousel .owl-nav .owl-prev,
+.client_section .owl-carousel .owl-nav .owl-next {
+  width: 45px;
+  height: 45px;
+  background-color: #28a745;
+  color: #ffffff;
+  outline: none;
+  bottom: 0px;
+  font-size: 24px;
+  margin: 0 5px;
+  border-radius: 100%;
+}
+
+/* client section end */
+.contact_section .heading_container {
+  margin-bottom: 45px;
+}
+
+.contact_section .form_container .form-group {
+  margin-bottom: 25px;
+}
+
+.contact_section .form_container input {
+  width: 100%;
+  border: none;
+  height: 50px;
+  padding-left: 25px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.contact_section .form_container input::-webkit-input-placeholder {
+  color: #222222;
+}
+
+.contact_section .form_container input:-ms-input-placeholder {
+  color: #222222;
+}
+
+.contact_section .form_container input::-ms-input-placeholder {
+  color: #222222;
+}
+
+.contact_section .form_container input::placeholder {
+  color: #222222;
+}
+
+.contact_section .form_container input.message-box {
+  height: 120px;
+  border-radius: 5px;
+}
+
+.contact_section .form_container .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contact_section .form_container button {
+  margin-top: 10px;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 0px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+
+.contact_section .form_container button:hover {
+  background-color: #e69c00;
+}
+
+/* footer section*/
+.footer_section {
+  background-color: #222831;
+  color: #ffffff;
+  padding: 75px 0 40px 0;
+  text-align: center;
+}
+
+.footer_section h4 {
+  font-size: 28px;
+}
+
+.footer_section h4,
+.footer_section .footer-logo {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.footer_section p {
+  color: #dbdbdb;
+}
+
+.footer_section .footer-col {
+  margin-bottom: 30px;
+}
+
+.footer_section .footer_contact .contact_link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer_section .footer_contact .contact_link_box a {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.footer_section .footer_contact .contact_link_box a i {
+  margin-right: 5px;
+}
+
+.footer_section .footer_contact .contact_link_box a:hover {
+  color: #28a745;
+}
+
+.footer_section .footer-logo {
+  display: block;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.footer_section .footer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer_section .footer_social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #222831;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin: 0 2.5px;
+  font-size: 18px;
+}
+
+.footer_section .footer_social a:hover {
+  color: #28a745;
+}
+
+.footer_section .footer-info {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.footer_section .footer-info p {
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer_section .footer-info p a {
+  color: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */
+/* Deixa o plano principal ligeiramente maior e com a borda amarela de fábrica */
+.food_section .plano-destaque {
+  border: 2px solid #28a745 !important;
+  transform: scale(1.03);
+  /* Deixa a caixa 3% maior que as outras */
+  background-color: #1a1e24;
+  /* Um tom ligeiramente mais escuro para contrastar */
+}
+
+/* Alternativa caso a de cima não funcione: empurra a linha dos cartões para baixo */
+.food_section .row.grid {
+  margin-top: 60px !important;
+}
+
+/* Destaca o título principal e o texto da seção inicial */
+.hero_area .detail-box h1,
+.hero_area .detail-box p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* --- CUSTOMIZAÇÃO PREMIUM DA NAVBAR (AGROVISION) --- */
+
+/* 1. Deixa as letras do menu mais grossas, legíveis e com sombra */
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  /* Letras levemente mais grossas */
+  text-transform: uppercase;
+  font-size: 15px !important;
+  letter-spacing: 1px;
+  /* Espaçamento elegante entre as letras */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8) !important;
+  /* Evita sumir no céu */
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* 2. Efeito sensacional: Linha verde que surge embaixo do link ao passar o mouse */
+.custom_nav-container .navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #28a745;
+  /* O verde que você escolheu */
+  transition: width 0.3s ease;
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link::after {
+  width: 100%;
+  /* A linha estica preenchendo o link */
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link {
+  color: #28a745 !important;
+  /* O texto brilha em verde no hover */
+}
+
+/* 3. Estilização do Botão Verde da Direita (antigo Order Online) */
+.custom_nav-container .btn-box {
+  background-color: #28a745 !important;
+  border: 2px solid transparent !important;
+  border-radius: 25px !important;
+  /* Bordas arredondadas modernas estilo pílula */
+  padding: 8px 22px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3) !important;
+  /* Brilho neon sutil no botão */
+  transition: all 0.3s ease !important;
+}
+
+/* Efeito ao passar o mouse no botão da direita */
+.custom_nav-container .btn-box:hover {
+  background-color: transparent !important;
+  border-color: #28a745 !important;
+  /* Vira um botão vazado elegante */
+  color: #28a745 !important;
+  transform: scale(1.05);
+  /* Dá um leve "pulso" para a frente */
+}
+
+/* --- NOVA IDENTIDADE TIPOGRÁFICA AGROVISION --- */
+
+/* Aplica a fonte de leitura limpa em todo o site por padrão */
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Força todos os títulos grandes a usarem a fonte tecnológica e imponente */
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  /* Deixa os títulos bem marcados */
+  letter-spacing: -0.5px;
+  /* Deixa o visual dos títulos mais compacto e premium */
+}
+
+/* Ajuste específico para a logo "AgroVision" lá no topo */
+.navbar-brand span {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+  /* Super grossa para destacar a marca */
+  text-transform: uppercase;
+  /* Deixa em letras maiúsculas, se preferir */
+  letter-spacing: 1px;
+}
+
+/* --- REDESENHO COMPLETO DA SEÇÃO DE PLANOS (AGROVISION) --- */
+
+/* 1. Transforma o fundo branco sem graça em um degradê sutil e tecnológico */
+.food_section {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7f5 100%) !important;
+  position: relative;
+}
+
+/* 2. Deixa as caixas dos planos muito mais elegantes e com sombra fluida */
+.food_section .box {
+  background-color: #1e242b !important;
+  /* Um cinza levemente mais azulado/premium */
+  border-radius: 20px !important;
+  /* Bordas mais suaves */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+  overflow: visible !important;
+  /* Permite que efeitos saiam da caixa se necessário */
+  border: 2px solid transparent !important;
+}
+
+/* 3. Ajuste fino na caixa de destaque (Plano Semestral) */
+.food_section .plano-destaque {
+  border: 2px solid #28a745 !important;
+  /* Borda verde impecável */
+  box-shadow: 0 15px 35px rgba(40, 167, 69, 0.15) !important;
+  /* Brilho verde sutil */
+}
+
+/* 4. Estilização dos textos internos para parecer planos de assinatura */
+.food_section .box .detail-box h5 {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  margin-bottom: 15px !important;
+  color: #ffffff !important;
+}
+
+/* Lista de vantagens que vamos colocar dentro do HTML */
+.food_section .box .lista-vantagens {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 20px 0 !important;
+  text-align: left !important;
+}
+
+.food_section .box .lista-vantagens li {
+  color: #b0b8c1 !important;
+  font-size: 14px !important;
+  margin-bottom: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Ícone de "Check" verde antes de cada vantagem */
+.food_section .box .lista-vantagens li::before {
+  content: '✓' !important;
+  color: #28a745 !important;
+  font-weight: bold !important;
+  margin-right: 10px !important;
+  font-size: 16px !important;
+}
+
+/* 5. Transforma o botão do carrinho em um botão largo de assinatura (Estilo Netflix) */
+.food_section .box .options {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin-top: 20px !important;
+}
+
+.food_section .box .options a {
+  width: 100% !important;
+  background-color: #28a745 !important;
+  color: #ffffff !important;
+  padding: 12px 0 !important;
+  border-radius: 10px !important;
+  text-align: center !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.food_section .box .options a:hover {
+  background-color: #1e5e22 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Some com o botão de "View More" do rodapé, já que só temos 3 planos fixos */
+.food_section .btn-box {
+  display: none !important;
+}
+
+/* --- RESET E ALINHAMENTO NATURAL DOS PLANOS --- */
+
+/* 1. Deixa as caixas respirarem e crescerem de forma idêntica e natural */
+.food_section .box {
+  height: auto !important;
+  min-height: 560px !important;
+  /* Uma altura mínima confortável */
+  max-height: none !important;
+  /* Remove o bloqueio anterior */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 25px 20px 30px 20px !important;
+  /* Dá mais espaço no rodapé para o botão */
+  box-sizing: border-box !important;
+}
+
+/* 2. Força o miolo do texto a se organizar perfeitamente */
+.food_section .box .detail-box {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+  justify-content: transform !important;
+}
+
+/* 3. Padroniza a altura das descrições para que nenhuma quebra de linha desalinhe os cards */
+.food_section .box .detail-box p {
+  min-height: 70px !important;
+  /* Força os parágrafos a terem o mesmo tamanho */
+  margin-bottom: 15px !important;
+}
+
+/* 4. Trava as listas de vantagens para começarem juntas e empurrarem o botão para a base */
+.food_section .box .lista-vantagens {
+  margin-top: 10px !important;
+  margin-bottom: 25px !important;
+  /* Garante uma margem segura antes do botão */
+  flex-grow: 1 !important;
+}
+
+/* 5. Garante que o botão fique preso dentro da caixa, sem flutuar para fora */
+.food_section .box .options {
+  margin-top: auto !important;
+  position: relative !important;
+  bottom: 0 !important;
+  width: 100% !important;
+}
+
+/* --- CUSTOMIZAÇÃO DO FUNDO TECNOLÓGICO DA SEÇÃO --- */
+
+.food_section {
+  /* 1. Cria uma cor de fundo sutil que contrasta com os cards escuros */
+  background-color: #f8fafc !important;
+
+  /* 2. Cria o efeito de grade milimétrica (estilo mapa/topografia) usando linhas semi-transparentes */
+  background-image:
+    linear-gradient(rgba(40, 167, 69, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(40, 167, 69, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.02) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.02) 2px, transparent 2px) !important;
+
+  /* 3. Define o tamanho dos quadradinhos da grade */
+  background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px !important;
+
+  /* 4. Garante um espaçamento elegante nas bordas para o conteúdo respirar */
+  padding-top: 100px !important;
+  padding-bottom: 120px !important;
+  position: relative;
+}
+
+/* Um toque extra: adiciona uma linha decorativa verde bem fina logo abaixo do título "Nossos serviços" */
+.food_section .heading_container h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #28a745;
+  margin: 15px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* --- TRANSIÇÃO E INTERATIVIDADE DOS PLANOS (AGROVISION) --- */
+
+/* 1. Remove qualquer bloqueio de opacidade e garante que os cards apareçam fixos instantaneamente */
+.food_section .box {
+  opacity: 1 !important;
+  animation: none !important;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease !important;
+}
+
+/* 2. Mantém a transição suave e esfumaçada no topo da grade */
+.food_section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, transparent 100%) !important;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 3. Mantém o efeito elegante do card flutuar de leve ao passar o mouse */
+.food_section .box:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* --- REMODELAGEM PREMIUM E ESTILOSA DA SEÇÃO EQUIPE --- */
+
+/* 1. Transforma a seção em um bloco escuro premium, criando uma divisão clara e nítida */
+.client_section {
+  background-color: #1e242b !important;
+  /* O mesmo cinza-azulado dos cartões de planos */
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  position: relative;
+  box-shadow: inset 0 15px 30px rgba(0, 0, 0, 0.2) !important;
+  /* Sombra interna para dar profundidade */
+}
+
+/* 2. Muda a cor do título principal para branco para destacar no fundo escuro */
+.client_section .heading_container h2 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+/* Linha decorativa verde abaixo do título "Conheça nossa equipe!" */
+.client_section .heading_container h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #28a745;
+  margin: 15px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* 3. Estiliza os blocos de texto da equipe para contrastarem perfeitamente */
+.client_section .box {
+  background-color: #2a323d !important;
+  /* Um tom ligeiramente mais claro que o fundo */
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 15px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Ajusta as cores dos textos internos */
+.client_section .box .detail-box p {
+  color: #b0b8c1 !important;
+}
+
+.client_section .box .detail-box h6 {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.client_section .box .detail-box h5 {
+  color: #28a745 !important;
+  /* Destaca o nome do profissional em verde */
+  font-weight: 700 !important;
+}
+
+/* --- ESTILIZAÇÃO DA SEÇÃO SOBRE (AGROVISION) --- */
+
+/* Botão personalizado para rolar até a equipe */
+.btn-conhecer-equipe {
+  display: inline-block !important;
+  background-color: #28a745 !important;
+  color: #ffffff !important;
+  padding: 12px 30px !important;
+  border-radius: 30px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 14px !important;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2) !important;
+  text-decoration: none !important;
+}
+
+.btn-conhecer-equipe:hover {
+  background-color: #1e5e22 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4) !important;
+}
+
+/* Efeito tecnológico: cria uma aura brilhante verde atrás da futura foto do drone */
+.about_section .img-box img {
+  filter: drop-shadow(0 0 30px rgba(40, 167, 69, 0.3)) !important;
+  transition: all 0.5s ease;
+}
+
+.about_section .img-box img:hover {
+  filter: drop-shadow(0 0 45px rgba(40, 167, 69, 0.5)) !important;
+}
+
+/* --- MICRO-INTERAÇÕES DOS ÍCONES DO TOPO (AGROVISION) --- */
+
+/* 1. Efeito no Ícone de Usuário (Salto Suave) */
+.user_option .user_link {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.user_option .user_link:hover {
+  transform: translateY(-4px) !important;
+  /* Faz o bonequinho subir de leve */
+}
+
+.user_option .user_link:hover svg stroke {
+  stroke: #28a745 !important;
+  /* Muda a cor do contorno para o verde da sua marca */
+}
+
+/* 2. Efeito no Carrinho de Compras (Balanço Técnico) */
+.user_option .cart_link {
+  transition: transform 0.3s ease !important;
+}
+
+.user_option .cart_link:hover {
+  animation: balançoCarrinho 0.5s ease-in-out forwards;
+}
+
+.user_option .cart_link:hover svg path {
+  fill: #28a745 !important;
+  /* Muda a cor do carrinho para o verde da marca */
+}
+
+/* Criando a física do balanço do carrinho */
+@keyframes balançoCarrinho {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* --- MICRO-INTERAÇÕES DOS ÍCONES DO TOPO (AGROVISION) --- */
+
+/* 1. Efeito no Ícone de Usuário (Salto Suave) */
+.user_option .user_link {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.user_option .user_link:hover {
+  transform: translateY(-4px) !important;
+  /* Faz o bonequinho subir de leve */
+}
+
+.user_option .user_link:hover svg stroke {
+  stroke: #28a745 !important;
+  /* Muda a cor do contorno para o verde da sua marca */
+}
+
+/* 2. Efeito no Carrinho de Compras (Balanço Técnico) */
+.user_option .cart_link {
+  transition: transform 0.3s ease !important;
+}
+
+.user_option .cart_link:hover {
+  animation: balançoCarrinho 0.5s ease-in-out forwards;
+}
+
+.user_option .cart_link:hover svg path {
+  fill: #28a745 !important;
+  /* Muda a cor do carrinho para o verde da marca */
+}
+
+/* Criando a física do balanço do carrinho */
+@keyframes balançoCarrinho {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Remove de vez os botões de navegação automáticos (Fl 04 / Fl 05) do carrossel */
+.client_section .owl-nav {
+  display: none !important;
+}
