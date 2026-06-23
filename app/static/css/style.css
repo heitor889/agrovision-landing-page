@@ -657,7 +657,7 @@ a:focus {
 
 .about_section .img-box img {
   width: 100%;
-  max-width: 445px;
+  max-width: 2500px;
   position: relative;
   z-index: 2;
 }
